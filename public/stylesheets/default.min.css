@@ -1,0 +1,40 @@
+header {
+  z-index: 1200;
+  position: relative;
+  background-color: #2f3638; }
+  header .am-kai {
+    color: #fff; }
+
+.dm-left {
+  transition: all 0.4s ease-in-out;
+  width: 240px;
+  min-height: 100%;
+  padding-top: 57px;
+  position: absolute;
+  z-index: 1104;
+  top: 0;
+  left: 0px;
+  background: #282d2f; }
+  .dm-left .sidebar-nav {
+    margin: 0;
+    padding: 0; }
+    .dm-left .sidebar-nav li a {
+      display: block;
+      color: #868E8E;
+      padding: 10px 17px;
+      border-left: #282d2f 3px solid;
+      font-size: 14px;
+      cursor: pointer; }
+    .dm-left .sidebar-nav li a.on {
+      cursor: pointer;
+      border-left: #1CA2CE 3px solid;
+      color: #fff; }
+
+.dm-right {
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  margin-left: 240px;
+  z-index: 1101;
+  min-height: 922px;
+  border-bottom-left-radius: 3px;
+  padding: 20px; }

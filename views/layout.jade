@@ -1,0 +1,14 @@
+doctype html
+html
+	head
+		block title
+		link(rel='stylesheet', href='/stylesheets/amazeui.min.css')
+		link(rel='stylesheet', href='/stylesheets/default.min.css')
+	body
+		include header.jade
+		include left.jade
+		div.dm-right
+			block content
+	script(src='/javascripts/amazeui.min.js')
+	script(src='/javascripts/jquery.min.js')
+	block script
