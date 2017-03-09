@@ -1,0 +1,58 @@
+extends layout
+block title
+	title 定义模板参数
+block script
+	script(src='/javascripts/index.min.js')
+
+block content
+	ol.am-breadcrumb.am-breadcrumb-slash
+		li 系统
+		li HTML生成
+	form.am-form.am-form-horizontal(
+		action="/create"
+		method="post"
+	)
+		fieldset
+			legend 选择HTML模板条件
+			div.am-form-group
+				label.am-u-sm-3.am-form-label 模板循环数量 
+				div.am-u-sm-9
+					input(
+						type = "number"
+						placeholder = "输入数量"
+						name = "number"
+						value = "6"
+					)
+			div.am-form-group
+				label.am-u-sm-3.am-form-label 图片宽度
+				div.am-u-sm-9
+					label.am-radio-inline
+						input(
+							type = "radio"
+							name = "img"
+							checked = "checked"
+							value = "0"
+						)
+						span 默认220px
+					label.am-radio-inline
+						input(
+							type = "radio"
+							name = "img"
+							value = "1"
+						)
+						span 自适应
+			div.am-form-group
+				label.am-u-sm-3.am-form-label 默认边距单位
+				div.am-u-sm-9
+					input(
+						type = "number"
+						placeholder = "输入数量"
+						name = "margin"
+						value = "4"
+					)
+			div.am-form-group
+				div.am-u-sm-9.am-u-sm-offset-3
+					button.am-btn.am-btn-danger(
+						type = "submit"
+						name = "Submit"
+					) 提交
