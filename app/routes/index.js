@@ -1,16 +1,13 @@
 const Router = require('koa-66');
 const router = new Router();
-const DMHtml = require('../controllers/htmlController');
+const create = require('../controllers/htmlController');
 
 router.get('/', async function (ctx, next) {
-  ctx.state = {
-    title: 'koa2 title'
-  };
-  await ctx.render('index', {
-  });
+	await ctx.render('index', {
+	});
 })
 
-router.post('/create', DMHtml.Create())
+router.post('/create', create);
 // router.get('/views/:id', (ctx,next) => {
 //   return next().then(() => {
 //     console.log(ctx.params);
@@ -24,4 +21,4 @@ router.post('/create', DMHtml.Create())
 // });
 // module.exports.router = router;
 
-module.exports.router = router
+module.exports.router = router;

@@ -1,0 +1,21 @@
+{{each indexkey as index}}
+<div style="width:{{itemsize}}px;float: left; margin:{{margin}}px;">
+	<div style="width:{{itemsize}}px;float: left; margin:{{margin}}px;">
+	<a dmtmp="{{c.goods.url}}{{index}};index:{{index}}" target="_blank">
+		<img dmtmp="{{c.goods.img}}{{index}};index:{{index}}"  src="default.jpg"
+			style="width:{{imgsize}}px;height:{{imgsize}}px;" width="{{imgsize}}px" height="{{imgsize}}px" />
+	</a>
+	<div style="width:{{imgsize}}px;margin: {{margin*2}}px auto 0;">
+		<span>
+			￥
+		</span>
+		<span dmtmp="{{c.goods.price}}{{index}};index:{{index}};">
+		</span>
+	</div>
+	<div>
+		<span dmtmp="{{c.comment.user}}{{index}};index:{{index}}"></span>
+		<span dmtmp="{{c.comment.content}}{{index}};index:{{index}}"></span>
+	</div>
+</div>
+</div>
+{{/each}}

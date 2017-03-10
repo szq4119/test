@@ -9,6 +9,8 @@ block content
 		li 系统
 		li HTML生成
 	div.am-form
-		div.am-form-group 
-			div.am-u-sm-9
-				textarea
+		each val, index in htmlary
+			div.am-form-group 
+				label #{val.size}px
+				textarea(cols=8 rows=10) #{val.html}
+			
